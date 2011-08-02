@@ -1,0 +1,4 @@
+django-debug-toolbar
+git+git://u16586.netangels.ru/django-fab-deploy.git#egg=django-fab-deploy
+jinja2
+fabric >= 1.0.0

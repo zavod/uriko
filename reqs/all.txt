@@ -1,0 +1,4 @@
+-r python.txt
+-r basic.txt
+-r django.txt
+-r cms.txt

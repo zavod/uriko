@@ -1,0 +1,1 @@
+git+git://u16586.netangels.ru/cms.git#egg=zavodcms

@@ -1,0 +1,11 @@
+Django
+django-mptt
+django-tinymce
+South
+git+git://github.com/smacker/django-appsettings.git
+git+git://github.com/smacker/django-sugar.git
+git+git://github.com/smacker/easy-thumbnails.git
+git+git://github.com/etianen/django-reversion.git
+hg+https://bitbucket.org/izi/django-admin-tools
+git+git://github.com/smacker/django-uploadify.git
+git+git://github.com/smacker/django-filebrowser-no-grappelli-for-django13.git
