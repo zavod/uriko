@@ -199,7 +199,7 @@ CMS_ENABLED_TYPES = ['page', 'list type', 'article', 'news', 'link', 'gallery']
 
 CMS_EXCLUDE_BLOCKS = ['News', 'Menu', 'Banner']
 
-REGIONS = ()
+REGIONS = (('header', 'header'), ('footer', 'footer'), ('sidebar', 'sidebar'))
 
 ### Import local settings ###
 
