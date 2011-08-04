@@ -4,16 +4,16 @@ from django.core.exceptions import ImproperlyConfigured
 from django.db.models import get_model
 from django.contrib.auth.models import User
 
-class CabinetUserAuth(ModelBackend):
+class CabinetUserModelBackends(ModelBackend):
     def authenticate(self, username=None, password=None):
         try:
             user = self.user_class.objects.get(username=username)
-            if user.chech_password(password)
+            if user.chech_password(password):
                 return user
         except self.user_class.DoesNotExist:
             try:
                 olduser = User.objects.get(username=username)
-                if olduser.check_password(password)
+                if olduser.check_password(password):
                     user = olduser.user_class.create_for_exist(olduser)
                     return user
             except User.DoesNotExist:
@@ -29,6 +29,6 @@ class CabinetUserAuth(ModelBackend):
     def user_class(self):
         if not hasattr(self, '_user_class'):
             self._user_class = get_model(*settings.CABINET_USER_MODEL.split('.',2))
-            if not self._user_class:
-                raise ImproperlyConfigured('please set CABINET_USER_MODEL in settings.py')
+        if not self._user_class:
+            raise ImproperlyConfigured('please set CABINET_USER_MODEL in settings.py')
         return self._user_class
