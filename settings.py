@@ -188,6 +188,10 @@ CACHES = {
 }
 
 APPSETTINGS_USE_CACHE = True
+CABINET_USER_MODEL = 'uauth.CustomUser'
+AUTHENTICATION_BACKENDS = (
+    'uauthapp.uauth_backends.CabinetUserModelBackend',
+)
 
 CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
 
