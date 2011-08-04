@@ -188,7 +188,7 @@ CACHES = {
 }
 
 APPSETTINGS_USE_CACHE = True
-CABINET_USER_MODEL = 'uauth.CabinetUser'
+CABINET_USER_MODEL = 'uauthapp.CabinetUser'
 AUTHENTICATION_BACKENDS = (
     'uauthapp.uauth_backends.CabinetUserModelBackends',
 )
